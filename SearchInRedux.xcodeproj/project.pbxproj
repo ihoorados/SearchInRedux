@@ -14,6 +14,22 @@
 		70D811222956E74E00354700 /* SearchInReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D811212956E74E00354700 /* SearchInReduxTests.swift */; };
 		70D8112C2956E74E00354700 /* SearchInReduxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D8112B2956E74E00354700 /* SearchInReduxUITests.swift */; };
 		70D8112E2956E74F00354700 /* SearchInReduxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D8112D2956E74F00354700 /* SearchInReduxUITestsLaunchTests.swift */; };
+		70D8113C2956E79500354700 /* MockSearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D8113B2956E79500354700 /* MockSearchType.swift */; };
+		70D8113F2956E7CB00354700 /* SearchReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D8113E2956E7CB00354700 /* SearchReducer.swift */; };
+		70D811422956E88700354700 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 70D811412956E88700354700 /* ComposableArchitecture */; };
+		70D811442956E88700354700 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 70D811432956E88700354700 /* Dependencies */; };
+		70D811462956E8B600354700 /* SearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D811452956E8B600354700 /* SearchType.swift */; };
+		70D811482956E8DD00354700 /* SearchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D811472956E8DD00354700 /* SearchState.swift */; };
+		70D8114A2956E92600354700 /* SearchAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D811492956E92600354700 /* SearchAction.swift */; };
+		70D8114D2956E99B00354700 /* Pallete.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D8114C2956E99B00354700 /* Pallete.xcassets */; };
+		70D811512956E9FF00354700 /* SearchSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D811502956E9FF00354700 /* SearchSwiftUI.swift */; };
+		70D811532956EA3200354700 /* RtleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D811522956EA3200354700 /* RtleScrollView.swift */; };
+		70D811552956EA5100354700 /* DefaultSearchListSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D811542956EA5100354700 /* DefaultSearchListSwiftUI.swift */; };
+		70D811572956EA6C00354700 /* ResponseSearchListSwfitUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D811562956EA6C00354700 /* ResponseSearchListSwfitUI.swift */; };
+		70D811592956EA8400354700 /* SearchFilterSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D811582956EA8400354700 /* SearchFilterSwiftUI.swift */; };
+		70D8115B2956EA9900354700 /* SearchLoadingSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D8115A2956EA9900354700 /* SearchLoadingSwiftUI.swift */; };
+		70D81162295723CD00354700 /* MapState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D81161295723CD00354700 /* MapState.swift */; };
+		70D81164295725A700354700 /* ActiveSearchSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D81163295725A700354700 /* ActiveSearchSwiftUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +61,20 @@
 		70D811272956E74E00354700 /* SearchInReduxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchInReduxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D8112B2956E74E00354700 /* SearchInReduxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInReduxUITests.swift; sourceTree = "<group>"; };
 		70D8112D2956E74F00354700 /* SearchInReduxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInReduxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		70D8113B2956E79500354700 /* MockSearchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchType.swift; sourceTree = "<group>"; };
+		70D8113E2956E7CB00354700 /* SearchReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchReducer.swift; sourceTree = "<group>"; };
+		70D811452956E8B600354700 /* SearchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchType.swift; sourceTree = "<group>"; };
+		70D811472956E8DD00354700 /* SearchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchState.swift; sourceTree = "<group>"; };
+		70D811492956E92600354700 /* SearchAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAction.swift; sourceTree = "<group>"; };
+		70D8114C2956E99B00354700 /* Pallete.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Pallete.xcassets; sourceTree = "<group>"; };
+		70D811502956E9FF00354700 /* SearchSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSwiftUI.swift; sourceTree = "<group>"; };
+		70D811522956EA3200354700 /* RtleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RtleScrollView.swift; sourceTree = "<group>"; };
+		70D811542956EA5100354700 /* DefaultSearchListSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSearchListSwiftUI.swift; sourceTree = "<group>"; };
+		70D811562956EA6C00354700 /* ResponseSearchListSwfitUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSearchListSwfitUI.swift; sourceTree = "<group>"; };
+		70D811582956EA8400354700 /* SearchFilterSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilterSwiftUI.swift; sourceTree = "<group>"; };
+		70D8115A2956EA9900354700 /* SearchLoadingSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoadingSwiftUI.swift; sourceTree = "<group>"; };
+		70D81161295723CD00354700 /* MapState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapState.swift; sourceTree = "<group>"; };
+		70D81163295725A700354700 /* ActiveSearchSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSearchSwiftUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70D811422956E88700354700 /* ComposableArchitecture in Frameworks */,
+				70D811442956E88700354700 /* Dependencies in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +129,9 @@
 			children = (
 				70D8110F2956E74C00354700 /* SearchInReduxApp.swift */,
 				70D811112956E74C00354700 /* ContentView.swift */,
+				70D8114B2956E96D00354700 /* DesignSystem */,
+				70D8113D2956E7B700354700 /* Application */,
+				70D8113A2956E78100354700 /* Mock */,
 				70D811132956E74E00354700 /* Assets.xcassets */,
 				70D811152956E74E00354700 /* SearchInRedux.entitlements */,
 				70D811162956E74E00354700 /* Preview Content */,
@@ -129,6 +164,81 @@
 			path = SearchInReduxUITests;
 			sourceTree = "<group>";
 		};
+		70D8113A2956E78100354700 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				70D8113B2956E79500354700 /* MockSearchType.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		70D8113D2956E7B700354700 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				70D81160295723BD00354700 /* Map */,
+				70D8115F295723B600354700 /* Search */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		70D8114B2956E96D00354700 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				70D8114C2956E99B00354700 /* Pallete.xcassets */,
+				70D8115C2956EACD00354700 /* Font */,
+				70D8114E2956E9B900354700 /* SearchUI */,
+				70D8114F2956E9C700354700 /* Components */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		70D8114E2956E9B900354700 /* SearchUI */ = {
+			isa = PBXGroup;
+			children = (
+				70D811502956E9FF00354700 /* SearchSwiftUI.swift */,
+			);
+			path = SearchUI;
+			sourceTree = "<group>";
+		};
+		70D8114F2956E9C700354700 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				70D811522956EA3200354700 /* RtleScrollView.swift */,
+				70D81163295725A700354700 /* ActiveSearchSwiftUI.swift */,
+				70D811542956EA5100354700 /* DefaultSearchListSwiftUI.swift */,
+				70D811562956EA6C00354700 /* ResponseSearchListSwfitUI.swift */,
+				70D811582956EA8400354700 /* SearchFilterSwiftUI.swift */,
+				70D8115A2956EA9900354700 /* SearchLoadingSwiftUI.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		70D8115C2956EACD00354700 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		70D8115F295723B600354700 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				70D811472956E8DD00354700 /* SearchState.swift */,
+				70D8113E2956E7CB00354700 /* SearchReducer.swift */,
+				70D811492956E92600354700 /* SearchAction.swift */,
+				70D811452956E8B600354700 /* SearchType.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		70D81160295723BD00354700 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				70D81161295723CD00354700 /* MapState.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +255,10 @@
 			dependencies = (
 			);
 			name = SearchInRedux;
+			packageProductDependencies = (
+				70D811412956E88700354700 /* ComposableArchitecture */,
+				70D811432956E88700354700 /* Dependencies */,
+			);
 			productName = SearchInRedux;
 			productReference = 70D8110C2956E74C00354700 /* SearchInRedux.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +331,9 @@
 				Base,
 			);
 			mainGroup = 70D811032956E74C00354700;
+			packageReferences = (
+				70D811402956E88700354700 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 70D8110D2956E74C00354700 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,6 +352,7 @@
 			files = (
 				70D811182956E74E00354700 /* Preview Assets.xcassets in Resources */,
 				70D811142956E74E00354700 /* Assets.xcassets in Resources */,
+				70D8114D2956E99B00354700 /* Pallete.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +377,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70D811532956EA3200354700 /* RtleScrollView.swift in Sources */,
+				70D811572956EA6C00354700 /* ResponseSearchListSwfitUI.swift in Sources */,
+				70D8113C2956E79500354700 /* MockSearchType.swift in Sources */,
 				70D811122956E74C00354700 /* ContentView.swift in Sources */,
+				70D811462956E8B600354700 /* SearchType.swift in Sources */,
+				70D811552956EA5100354700 /* DefaultSearchListSwiftUI.swift in Sources */,
+				70D81162295723CD00354700 /* MapState.swift in Sources */,
+				70D8114A2956E92600354700 /* SearchAction.swift in Sources */,
+				70D811482956E8DD00354700 /* SearchState.swift in Sources */,
+				70D81164295725A700354700 /* ActiveSearchSwiftUI.swift in Sources */,
+				70D8113F2956E7CB00354700 /* SearchReducer.swift in Sources */,
 				70D811102956E74C00354700 /* SearchInReduxApp.swift in Sources */,
+				70D8115B2956EA9900354700 /* SearchLoadingSwiftUI.swift in Sources */,
+				70D811512956E9FF00354700 /* SearchSwiftUI.swift in Sources */,
+				70D811592956EA8400354700 /* SearchFilterSwiftUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +546,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SearchInRedux/Preview Content\"";
+				DEVELOPMENT_TEAM = 6URE3UAR5H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -427,7 +559,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -451,6 +583,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SearchInRedux/Preview Content\"";
+				DEVELOPMENT_TEAM = 6URE3UAR5H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -463,7 +596,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -604,6 +737,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		70D811402956E88700354700 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		70D811412956E88700354700 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70D811402956E88700354700 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		70D811432956E88700354700 /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70D811402956E88700354700 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = Dependencies;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 70D811042956E74C00354700 /* Project object */;
 }

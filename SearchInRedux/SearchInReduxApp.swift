@@ -6,12 +6,21 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct SearchInReduxApp: App {
+
+    let store: Store<SearchState, SearchAction> = .init(
+        initialState: SearchState(subState: .active, entities: MockSearchType().mockSearchList()),
+        reducer: AnyReducer.SearchReducer,
+      environment: ()
+    )
+
     var body: some Scene {
+        
         WindowGroup {
-            ContentView()
+            ContentView(store: store)
         }
     }
 }
