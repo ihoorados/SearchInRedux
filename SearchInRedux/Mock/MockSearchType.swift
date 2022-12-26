@@ -42,7 +42,7 @@ public struct MockSearchType{
     func mockFilterList() -> [SearchFilter]{
 
 
-        let filter0 = SearchFilter(title: "مرتبط بودن", isSelected: true,
+        let filter0 = SearchFilter(title: "Related", isSelected: true,
                                    filterItems: [FilterItem(title: "عنوان5", isSelected: false),
                                             FilterItem(title: "عنوان2", isSelected: false),
                                                  FilterItem(title: "عنوان کمی بزرگ", isSelected: false),
@@ -50,21 +50,23 @@ public struct MockSearchType{
 
                                             FilterItem(title: "1عنوان", isSelected: false)])
 
-        let filter1 = SearchFilter(title: "باز باشد", isSelected: false,
+        let filter1 = SearchFilter(title: "Open", isSelected: false,
                                    filterItems: [FilterItem(title: "عنوان3", isSelected: false),
                                             FilterItem(title: "عنوان4", isSelected: false),
                                             FilterItem(title: "عنوان5", isSelected: false)])
 
-        let filter2 = SearchFilter(title: "نوع واکسن", isSelected: false,
+        let filter3 = SearchFilter(title: "Star", isSelected: false,
+                                   filterItems: [FilterItem(title: "عنوان", isSelected: false),
+                                            FilterItem(title: "عنوان", isSelected: false),
+                                            FilterItem(title: "عنوان", isSelected: false)])
+
+        let filter2 = SearchFilter(title: "Vaccine", isSelected: false,
                                    filterItems: [FilterItem(title: "آسترازانکا", isSelected: false),
                                                  FilterItem(title: "سینوفارم", isSelected: true),
                                                  FilterItem(title: "بایوتک", isSelected: false),
                                                 FilterItem(title: "فایزر", isSelected: true)])
 
-        let filter3 = SearchFilter(title: "امتیاز", isSelected: false,
-                                   filterItems: [FilterItem(title: "عنوان", isSelected: false),
-                                            FilterItem(title: "عنوان", isSelected: false),
-                                            FilterItem(title: "عنوان", isSelected: false)])
+
 
         return [filter0,filter1,filter2,filter3]
     }

@@ -30,7 +30,8 @@ struct SearchSwiftUIView: View {
                         ShimmerView()
                             .cornerRadius(12)
                     }
-                }.padding()
+                }
+                .padding([.leading,.trailing,.top], 4.0)
             case .search:
                 DefaultSearchListSwiftUIView(defaultSelected: $inputText)
                     .environmentObject(viewStore)
@@ -40,6 +41,7 @@ struct SearchSwiftUIView: View {
             case .response:
 
                 ResponseSearchListSwiftUIView()
+                    .frame(minWidth: 0,maxWidth: .infinity)
                     .environmentObject(viewStore)
 
             case .active:
@@ -52,8 +54,8 @@ struct SearchSwiftUIView: View {
 //                    .frame(maxWidth: .infinity)
             }
         }
+        .frame(minWidth: 0,maxWidth: .infinity)
         .background(viewStore.state.subState == .active ? Color(.clear) : Color(.systemBackground))
-        .frame(maxWidth: 500)
     }
 }
 

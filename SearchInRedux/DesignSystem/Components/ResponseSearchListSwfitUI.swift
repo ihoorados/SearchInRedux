@@ -25,16 +25,32 @@ struct ResponseSearchListSwiftUIView: View {
             }
 
             if let responseItems = viewStore.response?.responseList{
-                ResultList(items: responseItems)
-                    .padding(.top, 4.0)
-                    .frame(maxWidth: .infinity)
+
+                ScrollView(.vertical) {
+
+                    ForEach(responseItems, id: \.id) { item in
+
+                        ResultCell(item: item)
+                            .frame(
+                                  minWidth: 0,
+                                  maxWidth: .infinity,
+                                  alignment: .leading
+                                )
+                            .background((Color("CellBackground")))
+                            .cornerRadius(8)
+                            .padding([.top,.leading,.trailing], 12)
+                    }
+                }
+
+
             }
         }
+        .padding([.leading,.trailing,.top,.bottom], 0)
     }
 
     func FilterList(items:[SearchFilter]) -> some View{
 
-        return ScrollViewRTL(type: .hList){
+        return ScrollView(.horizontal){
 
             HStack{
 
@@ -57,24 +73,8 @@ struct ResponseSearchListSwiftUIView: View {
                 }
             }
         }
+        .frame(height: 52)
         .padding([.leading,.trailing], 8)
-    }
-
-    func ResultList(items: [SearchResponse]) -> some View{
-
-        ScrollView(.vertical){
-            return HStack{
-                VStack(spacing: 8){
-                    ForEach(items, id: \.id) { item in
-                        ResultCell(item: item)
-                            .background(Color("CellBackground"))
-                            .cornerRadius(8)
-                    }
-                }
-                .padding([.leading,.trailing],8)
-            }
-       }
-        .padding([.leading,.trailing], 0)
     }
 
     func ResultCell(item: SearchResponse) -> some View{
@@ -82,17 +82,17 @@ struct ResponseSearchListSwiftUIView: View {
         return HStack(spacing: 12){
 
             Image(systemName: item.image)
-                .padding(.leading)
+                .padding([.leading], 12)
                 .foregroundColor(Color.red)
                 .imageScale(.large)
 
-            VStack(alignment: .leading, spacing: 4.0) {
-
+            VStack(alignment: .leading, spacing: 6.0) {
 
                 Text(item.title)
-                    .font(.system(size: 21,weight: .bold))
+                    .font(.system(size: 19,weight: .bold))
                 Text(item.subTitle)
-                    .font(.system(size: 18))
+                    .foregroundColor(.secondary)
+                    .font(.system(size: 16))
 
                 HStack{
                     Image(systemName: "star.fill")
@@ -109,17 +109,19 @@ struct ResponseSearchListSwiftUIView: View {
                         .font(.system(size: 17, weight: .semibold))
                 }
             }
-            .padding(.top)
-            .padding(.bottom)
 
+            Spacer()
             VStack{
                 Text(item.distanse)
                     .font(.system(size: 19, weight: .semibold))
                 Text(item.distanseLabel)
                     .font(.system(size: 16, weight: .semibold))
             }
-            .padding(.trailing)
+            .padding([.trailing], 12)
         }
+        .padding([.leading,.trailing], 0)
+        .padding([.top,.bottom], 12)
+
     }
 
     func activeSearchFilterCell(filter: SearchFilter) -> some View{
@@ -135,15 +137,11 @@ struct ResponseSearchListSwiftUIView: View {
                 HStack{
 
                     Text(filter.title)
-                        .padding([.leading], 8.0)
-                        .font(.system(size: 21))
+                        .padding([.leading,.trailing], 8.0)
+                        .font(.system(size: 17,weight: .bold))
                         .cornerRadius(8)
                         .multilineTextAlignment(.leading)
                         .foregroundColor(Color("BlueColor"))
-
-                    Image(systemName: "hand.tap.fill")
-                        .padding([.trailing], 8.0)
-                        .foregroundColor(Color("FilterActiveLabelColor"))
 
                 }
                 .frame(height: 44)
@@ -167,16 +165,11 @@ struct ResponseSearchListSwiftUIView: View {
                 HStack{
 
                     Text(filter.title)
-                        .padding([.leading], 8.0)
-                        .font(.system(size: 21))
+                        .padding([.leading,.trailing], 8.0)
+                        .font(.system(size: 17,weight: .bold))
                         .cornerRadius(8)
                         .multilineTextAlignment(.leading)
                         .foregroundColor(Color("FilterLabelColor"))
-
-                    Image(systemName: "hand.tap.fill")
-                        .padding([.trailing], 8.0)
-                        .foregroundColor(Color("FilterLabelColor"))
-                        .imageScale(.small)
                 }
                 .frame(height: 44)
                 .overlay(RoundedRectangle(cornerRadius: 8)
@@ -191,7 +184,7 @@ struct ResponseSearchListSwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
 
         let store: Store<SearchState, SearchAction> = .init(
-            initialState: SearchState(subState: .search, entities: MockSearchType().mockSearchList()),
+            initialState: SearchState(subState: .response, entities: MockSearchType().mockSearchList()),
             reducer: AnyReducer.SearchReducer,
           environment: ()
         )
